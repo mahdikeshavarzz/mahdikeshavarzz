@@ -1,16 +1,17 @@
 import { Grid } from "@material-ui/core";
 import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import Header from "./component/Header";
 import LeftSide from "./component/left/LeftSide";
 import RightSide from "./component/right/RightSide";
 import MainPart from "./component/mainpart/MainPart";
 import Footer from "./component/footer/Footer";
+import {HashRouter as BrowserRouter} from "react-router-dom";
 
 
 const App = () => {
     return (
-        <>
+        
           <div>
             <BrowserRouter>
               <Switch>
@@ -30,12 +31,12 @@ const App = () => {
                     </Grid>
                   </Grid>
                 </Route>
-                <Route exact path="/" component={MainPart} />
+                <Route  path="/" component={MainPart} />
               </Switch>
             </BrowserRouter>
+            <Footer />
           </div>
-          <Footer />
-        </>
+        
       );
 }
 

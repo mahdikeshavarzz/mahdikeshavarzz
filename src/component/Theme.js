@@ -2,10 +2,10 @@ import { createMuiTheme } from "@material-ui/core";
 
 const Theme = createMuiTheme({
   typography: {
-    fontFamily: "cursive",
+    fontFamily: "serif",
   },
   root: {
-    fontFamily: "cursive",
+    fontFamily: "serif",
   },
 });
 

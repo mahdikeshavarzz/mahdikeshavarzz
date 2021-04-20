@@ -1,91 +1,71 @@
-import { Grid, IconButton, Typography, useMediaQuery, useTheme } from "@material-ui/core";
+import {
+  Grid,
+  IconButton,
+  Typography,
+  useMediaQuery,
+  useTheme,
+} from "@material-ui/core";
 import React from "react";
 import useStyles from "./Styles";
-import { Telegram } from "@material-ui/icons";
 
-  
-  export default function Footer() {
-    const theme = useTheme();
-    const FooterSize = useMediaQuery(theme.breakpoints.down("sm"));
-    const classes = useStyles();
-    return (
-      <>
-        {!FooterSize ? (
-          <Grid container justify="space-around" className={classes.Footer}>
-            <Grid item>
-              <Typography className={classes.FooterTelId}>
-                <IconButton
-                  style={{
-                    backgroundColor: "cyan",
-                    color: "blue",
-                  }}
-                >
-                  <Telegram />
-                </IconButton>
-                <text
-                  style={{
-                    fontSize: "1.2rem",
-                    color: "black",
-                    fontWeight: "600",
-                    marginInline: "1rem",
-                  }}
-                >
-                  @Mahdi_KS78
-                </text>
-              </Typography>
-              <Typography
-                className={classes.FooterWebDesign}
-                style={{ marginTop: "1rem" }}
-              >
-                <text
-                  style={{
-                    fontSize: "1rem",
-                    color: "black",
-                    fontWeight: "600",
-                  }}
-                >
-                  Web Design by Mahdi-Keshavarz
-                </text>
-              </Typography>
-            </Grid>
-          </Grid>
-        ) : (
-          <Grid className={classes.FooterSmall}>
+export default function Footer() {
+  const theme = useTheme();
+  const FooterSize = useMediaQuery(theme.breakpoints.down("xs"));
+  const classes = useStyles();
+  return (
+    <>
+      {!FooterSize ? (
+        <Grid container justify="space-around" className={classes.Footer}>
+          <Grid item>
             <Typography className={classes.FooterTelId}>
-              <IconButton
-                style={{
-                  backgroundColor: "cyan",
-                  color: "blue",
-                }}
-              >
-                <Telegram />
-              </IconButton>
               <text
                 style={{
-                  fontSize: "1.2rem",
+                  fontSize: "1rem",
                   color: "black",
-                  fontWeight: "600",
-                  marginInline: "1rem",
                 }}
               >
-                @Mahdi_KS78
+                <b style={{ color: "blue" }}>Telegram : </b>@Mahdi_KS78
               </text>
             </Typography>
-            <br />
+          </Grid>
+          <Grid item>
             <Typography className={classes.FooterWebDesign}>
               <text
                 style={{
                   fontSize: "1rem",
                   color: "black",
-                  fontWeight: "600",
                 }}
               >
                 Web Design by Mahdi-Keshavarz
               </text>
             </Typography>
           </Grid>
-        )}
-      </>
-    );
-  }
-  
+        </Grid>
+      ) : (
+        <Grid className={classes.FooterSmall}>
+          <Typography className={classes.FooterTelId}>
+            <text
+              style={{
+                fontSize: "1rem",
+                color: "black",
+                fontFamily: "serif",
+              }}
+            >
+              <b style={{ color: "blue" }}>Telegram : </b>@Mahdi_KS78
+            </text>
+          </Typography>
+          <Typography className={classes.FooterWebDesign}>
+            <text
+              style={{
+                fontSize: "1rem",
+                color: "black",
+              }}
+            >
+              Web Design : <b style={{ color: "red" }}>Me</b>
+            </text>
+          </Typography>
+        </Grid>
+      )}
+    </>
+  );
+}

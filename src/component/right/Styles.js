@@ -5,6 +5,10 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "flex-end",
     marginTop: "3.4rem",
   },
+  smallGridCardRight: {
+    display: "flex",
+    justifyContent: "flex-end",
+  },
   cardGridRootRight: {
     display: "flex",
     flexDirection: "column",
@@ -17,6 +21,15 @@ const useStyles = makeStyles((theme) => ({
     width: "25rem",
     borderRadius: "20px",
     height: "15rem",
+  },
+  smallCardRootRight: {
+    backgroundColor: "black",
+    border: "2px solid orange",
+    boxShadow: "0px 0px 20px orange",
+    width: "100%",
+    borderRadius: "20px",
+    height: "15rem",
+    marginTop: "3.4rem",
   },
   b: {
     color: "white",
