@@ -6,7 +6,7 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "20px",
     boxShadow: "0px 0px 20px orange",
     width: "25rem",
-    height: "15rem",
+    height: "20rem",
   },
   smallCardRootUserProfile: {
     backgroundColor: "black",
@@ -32,12 +32,9 @@ const useStyles = makeStyles((theme) => ({
   },
 
   userProfImg: {
-    width: "110px",
-    height: "7rem",
     alignSelf: "center",
-    border: "3px solid orange",
-    borderRadius: "2rem",
   },
+
   b: {
     color: "white",
   },

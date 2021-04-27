@@ -21,11 +21,13 @@ export default function UserProfile() {
             <Card className={classes.cardRootUserProfile}>
               <CardContent>
                 <Grid item className={classes.cardGridRootUserProfile}>
-                  <img
-                    src={"images/mk.jpg"}
-                    alt="img"
-                    className={classes.userProfImg}
-                  />
+                  <Grid item className={classes.userGridImg}>
+                    <img
+                      src={"images/mk12.jpg"}
+                      alt="img"
+                      className={classes.userProfImg}
+                    />
+                  </Grid>
                   <Typography variant={"h6"} component={"h1"}>
                     <b className={classes.b}>
                       <text style={{ color: "orange" }}>Name</text> : Mahdi
@@ -53,11 +55,13 @@ export default function UserProfile() {
             <Card className={classes.smallCardRootUserProfile}>
               <CardContent>
                 <Grid item className={classes.cardGridRootUserProfile}>
-                  <img
-                    src={"images/user2.jpg"}
-                    alt="img"
-                    className={classes.userProfImg}
-                  />
+                  <Grid item className={classes.userGridImg}>
+                    <img
+                      src={"images/mk12.jpg"}
+                      alt="img"
+                      className={classes.userProfImg}
+                    />
+                  </Grid>
                   <Typography variant={"h6"} component={"h1"}>
                     <b className={classes.b}>
                       <text style={{ color: "orange" }}>Name</text> : Mahdi

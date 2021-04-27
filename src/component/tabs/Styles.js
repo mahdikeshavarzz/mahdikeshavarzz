@@ -1,6 +1,6 @@
 import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles((theme) => ({
-  navDiv: { width: "100%", fontFamily: "cursive" },
+  navDiv: { width: "100%", fontFamily: "serif" },
   navbar1: {
     backgroundColor: "#333",
   },
